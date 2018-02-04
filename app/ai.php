@@ -70,10 +70,10 @@ class AI
         $result = array();
         for($i=0;$i<sizeof($bf);$i++){
             if(strpos($text, $bf[$i]) !== false){                
-                array_push($result,$bf[i]);
+                array_push($result,$bf[$i]);
             }
         }
-        
+
         return $result;
     }
 
