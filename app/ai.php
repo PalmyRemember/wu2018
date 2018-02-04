@@ -91,10 +91,17 @@ class AI
         if (!empty($matches)) {
             array_push($result, 'TH');
         }
+        
         preg_match_all($en, $text, $matches, PREG_SET_ORDER, 0);
         if (!empty($matches)) {
             array_push($result, 'EN');
         }
+        
+        // preg_match_all($en, $re, $text, $matches, PREG_SET_ORDER, 0);
+        // if (!empty($matches)) {
+        //     array_push('TH', 'EN' );
+        // }
+
         return $result;
 
     }
