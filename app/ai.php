@@ -73,7 +73,7 @@ class AI
                 array_push($result,$bf[i]);
             }
         }
-
+        
         return $result;
     }
 
