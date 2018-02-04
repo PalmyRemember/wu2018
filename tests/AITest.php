@@ -39,21 +39,21 @@ final class AITest extends TestCase
         $this->assertEquals($expected_result, $result);
     }
 
-    public function testSentiment_RudeWords(): void
+    public function testRudeWords(): void
     {
         $result = AI::getRudeWords('ไอควาย');
         $expected_result = ['ไอควาย'];
         $this->assertEquals($expected_result, $result);
     }
 
-    public function testSentiment_Languages(): void
+    public function testLanguages_TH(): void
     {
         $result = AI::getLanguages('ง่วง');
         $expected_result = ['TH'];
         $this->assertEquals($expected_result, $result);
     }
 
-    public function testSentiment_Languages(): void
+    public function testLanguages_EN(): void
     {
         $result = AI::getSentiment('Languages');
         $expected_result = ['EN'];
