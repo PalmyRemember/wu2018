@@ -75,7 +75,7 @@ class AI
             }
         }
 
-        return (sizeof($result)==0)?null:$result;
+        return $result;
     }
 
     /**
