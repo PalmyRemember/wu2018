@@ -55,7 +55,7 @@ final class AITest extends TestCase
 
     public function testLanguages_EN(): void
     {
-        $result = AI::getSentiment('Languages');
+        $result = AI::getLanguages('Languages');
         $expected_result = ['EN'];
         $this->assertEquals($expected_result, $result);
     }
