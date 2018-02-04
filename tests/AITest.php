@@ -48,7 +48,7 @@ final class AITest extends TestCase
 
     public function testSentiment_Languages(): void
     {
-        $result = AI::getSentiment('Languages');
+        $result = AI::getLanguages('ง่วง');
         $expected_result = 'TH';
         $this->assertEquals($expected_result, $result);
     }
