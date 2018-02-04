@@ -20,7 +20,7 @@
 }
 #sentiment {
     background: white;
-    color: #209cee;
+    color: #bd2dff;
     font-size: 100px;
     line-height: 1.5em;
     padding: 20px;
@@ -124,7 +124,7 @@
                     break
             }
             document.getElementById('rude-words').innerHTML = result.rude_words.join(', ')
-            lang_icon = ''
+            lang_icon = '<img src="http://www.fwdder.com/uploads/fwdder_0_1432108236.jpg">'
             console.log(result.languages.includes('EN'))
             if (result.languages.includes('TH'))
                 lang_icon = '<img src="images/th.png" width="50">'
