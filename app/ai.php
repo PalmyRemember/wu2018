@@ -66,12 +66,11 @@ class AI
      */
     public static function getRudeWords($text)
     {
-        $bf = array("อีเหี้ย","ไอควาย","ไอสัส","เย็ดแม่ม","ช้างเย็ด","จันไร");
+        $bf = array('อีเหี้ย','ไอควาย','ไอสัส','เย็ดแม่ม','ช้างเย็ด','จันไร');
         $result = array();
         for($i=0;$i<sizeof($bf);$i++){
             if(strpos($text, $bf[$i]) !== false){                
                 array_push($result,$bf[i]);
-                
             }
         }
 
